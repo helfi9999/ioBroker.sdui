@@ -79,7 +79,15 @@
     "licenseInformation": {
       "type": "free",
       "license": "MIT"
-    }
+    },
+    "keywords": [
+      "SDUI",
+      "school",
+      "timetable",
+      "schedule",
+      "school news",
+      "VIS 2"
+    ]
   },
   "native": {
     "identifier": "",
