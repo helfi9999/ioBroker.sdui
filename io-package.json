@@ -29,7 +29,7 @@
       "zh-cn": "使用用户名和密码登录的非官方SDUI课程表"
     },
     "authors": [
-      "Community prototype"
+      "helfi9999 <helfi9999@gmail.com>"
     ],
     "platform": "Javascript/Node.js",
     "mode": "daemon",
