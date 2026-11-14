@@ -158,6 +158,11 @@ npm run test:package
 
 ## Changelog
 
+### 0.6.26
+
+- Renamed adapter display title to "Sdui" in all supported languages.
+
+
 ### 0.6.25
 
 - Updated Node.js and ioBroker compatibility requirements.

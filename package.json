@@ -1,6 +1,6 @@
 {
   "name": "iobroker.sdui",
-  "version": "0.6.25",
+  "version": "0.6.26",
   "description": "SDUI timetables and school news for ioBroker with VIS 2 widgets",
   "main": "main.js",
   "license": "MIT",
