@@ -1,69 +1,156 @@
-# ioBroker.sdui 0.5.0 – experimenteller Community-Testadapter
+# ioBroker.sdui
 
-## Wochenstundenplan wie in Sdui
+Unofficial community adapter for SDUI school timetables and
+school news in ioBroker, including two VIS 2 widgets.
 
-Die bestehende Wochenansicht `sdui.0.timetable.weekGrid.html` zeigt Montag bis Freitag mit Stunde und Uhrzeit links. In jeder Fachkachel werden **Fachkürzel**, **Lehrerkürzel** und **Raumkürzel** dargestellt. Vertretungen und Entfall erhalten farbliche Markierungen. Die tatsächlichen Daten kommen weiterhin über den vorhandenen Sdui-API-Abruf.
+**Version:** 0.6.24
+**License:** MIT
 
-## Farben selbst einstellen
+> This is an independent community project.
+> It is not affiliated with or endorsed by SDUI.
 
-Öffne **Instanzen → sdui.0 → Einstellungen**. Dort gibt es Farbwähler für Wirtschaft, Englisch, Erdkunde, Biologie, Sport, Mathematik, Deutsch, Physik, Kunst und Klassenstunde. Zusätzliche Fachnamen können unter *Weitere Fachfarben* eingetragen werden, z. B.:
+## Features
 
-```
-Informatik=#BFE7C0
-Religion=#F1E3C1
-```
+### Timetable
 
-Format: eine Zeile `Fachname=#RRGGBB`, den vollständigen Fachnamen aus Sdui benutzen. Die benutzerdefinierten Farben überschreiben die vorgegebenen Fachfarben. Außerdem lassen sich Standardfarbe, Randfarben für Vertretung/Entfall und Uhrzeitanzeige je Kachel einstellen. Nach **Speichern und Schließen** wird der HTML-State bei der nächsten Abfrage aktualisiert (normalerweise 15 Minuten). Bei einem Adapterneustart wird er sofort neu erzeugt.
+- Retrieve school timetable data from SDUI.
+- Display weekly timetables from Monday to Friday.
+- Show subjects, teachers, rooms and lesson times.
+- Highlight substitutions and cancelled lessons.
+- Configure subject colors and timetable appearance.
+- Navigate between available timetable weeks.
+- Retrieve future holiday information when provided by SDUI.
+- Provide timetable data as ioBroker states, HTML and JSON.
 
-## Datenpunkte
+### School news
 
-- `sdui.0.timetable.weekGrid.html` – fertiger HTML-Wochenplan für VIS
-- `sdui.0.timetable.weekGrid.json` – strukturiertes Wochenraster, jetzt zusätzlich mit Feld `kürzel` in jeder Unterrichtsstunde
-- Alle bisherigen Stundenplan-, Vertretungs-, JSON- und HTML-Datenpunkte bleiben erhalten.
+- Retrieve available SDUI school news.
+- Display messages in a VIS 2 dialog.
+- Show a news indicator and unread message count.
+- Mark individual messages as read.
+- Mark all messages as read.
 
-## Installation / Upgrade
+News read-status actions interact with SDUI. Timetable
+retrieval is read-only.
 
-Vor dem Update ein Backup bzw. Proxmox-Snapshot erstellen. Adapter-Paket in ioBroker Admin als eigene Quelle aus Datei installieren. Bestehende Instanz und Konfiguration prüfen. Bei der ersten Anmeldung Datenzugriff und Farben kontrollieren. Das ist ein **inoffizieller Testadapter**, offline getestet und nicht gegen eine echte ioBroker-Instanz verifiziert.
+## VIS 2 widgets
 
-**Datenschutz:** Keine Zugangsdaten, Bearer-Tokens oder Schülerdaten weitergeben. Der Adapter greift lesend auf den Stundenplan zu; News, Chats und Kalender sind nicht Bestandteil dieser Version.
+The adapter includes a widget set named **SDUI Widgets**.
 
-### Wochenwechsel in VIS (0.6.0)
+Two widgets are available:
 
-Der zusätzliche Zustand `sdui.0.timetable.weekGrid.navigationHtml` enthält ein Wochenraster mit klickbaren Pfeilen für zwei vorherige und fünf folgende Wochen. Die Navigation nutzt HTML-Radiofelder und CSS (keine Inline-JavaScript-Ausführung); deshalb kann sie in einem VIS-HTML-Widget verwendet werden, das Eingabefelder, Labels und `<style>`-Elemente zulässt. Im VIS-Editor können Klicks zunächst den Widget-Rahmen auswählen; teste den Wochenwechsel im Laufzeitmodus.
+1. **Stundenplan (inventwo-Stil)**
+   - Weekly timetable display
+   - Configurable appearance
 
-Die Navigation wechselt zwischen bereits geladenen Wochen. Sie löst keine neuen API-Anfragen aus. Für die vorige Woche `Days past` auf mindestens 14, für zwei vorige Wochen auf 21 stellen. Für mehrere zukünftige Wochen `Days future` entsprechend erhöhen (maximal 35). Bei fehlenden Daten zeigt die Navigation einen Hinweis. Das bisherige `weekGrid.html` bleibt als statische Ausgabe erhalten.
+2. **SDUI Logo mit News-Dialog**
+   - SDUI logo
+   - Unread news indicator
+   - News dialog
+   - Read-status controls
 
-## Version 0.6.3: future holidays
+Both widgets include preview images in the VIS 2 editor.
 
-An additional read-only timetable scan queries 28-day chunks for the next 210 days, once per day, for `kind: HOLIDAY` entries. No official separate holidays API is assumed. If the school does not supply holidays for the requested period, the adapter cannot infer them. The scan maintains the previous successful cache if a later request fails. Future holidays are surfaced through `holidays.*` and the navigable week grid, with navigation across the previous 3 weeks and next 8 weeks. The `nextEnd` value is the last school holiday day returned by Sdui, not an independently verified official end date.
+Legacy widget bundles are retained for compatibility with
+existing VIS 2 projects.
 
-## Version 0.6.4: Extended timetable range
+## Requirements
 
-`daysFuture` supports 1–210 days. The next 35 days are refreshed at the configured polling interval, and days 36–210 are refreshed daily in chunks of at most 28 days per request. The navigable weekly HTML view spans the configured horizon. Entries are available only if supplied by the Sdui API. Individual per-lesson states remain limited to the immediate 35 days for performance; full future items appear in `timetable.all`, `timetable.weekGrid.navigationHtml` and `timetable.raw.all`.
+- A working ioBroker installation
+- A supported Node.js version
+- VIS 2 for the included widgets
+- An SDUI account with access to school data
+- Network connectivity to the SDUI service
 
-## VIS individual styling (0.6.5)
+Available data and actions depend on the permissions of
+the SDUI account and the school's configuration.
 
-Set CSS variables in the VIS HTML widget custom CSS, or add an HTML style tag around the data-point content. Example:
+## Installation
 
-```css
-.sdui-navigator {
-  --sdui-font: Verdana, sans-serif;
-  --sdui-size: 14px;
-  --sdui-text: #172033;
-  --sdui-subject-size: 15px;
-  --sdui-details-size: 12px;
-  --sdui-header-size: 16px;
-  --sdui-header-bg: #dce8fa;
-  --sdui-header-text: #253858;
-  --sdui-period-bg: #eaf1fc;
-  --sdui-period-text: #172033;
-  --sdui-label-std: "Stunde";
-  --sdui-label-mo: "Montag";
-  --sdui-label-di: "Dienstag";
-  --sdui-label-mi: "Mittwoch";
-  --sdui-label-do: "Donnerstag";
-  --sdui-label-fr: "Freitag";
-}
-```
+This project is currently preparing for an official
+ioBroker repository release.
 
-On regular `weekGrid.html` target `.sdui-week-wrap` instead of `.sdui-navigator`. Depending on VIS/VIS2 widgets, style settings may be embedded in an HTML widget or a project-level stylesheet. If the widget uses an iframe, global CSS will not cross its boundary. All colors remain independently configurable in ioBroker. This change is presentational only; the API and existing data points remain unchanged.
+GitHub repository:
+
+https://github.com/helfi9999/ioBroker.sdui
+
+Until the adapter has been published on npm and added to
+the ioBroker repository, installation is intended for
+experienced users testing a community adapter.
+
+Back up your ioBroker installation before installing or
+updating a development version.
+
+## Configuration
+
+Open the SDUI adapter settings in ioBroker Admin.
+
+The configuration includes:
+
+- **identifier**: SDUI login identifier
+- **password**: SDUI password
+- **schoolSearch**: School search input
+- **slink**: School selection
+- **userId**: User selection
+- **intervalMinutes**: Polling interval
+- **daysPast**: Past timetable range
+- **daysFuture**: Future timetable range
+
+Some settings may require an active SDUI login or school
+selection before values become available.
+
+After saving the configuration, verify that the adapter
+connects successfully and creates timetable/news states.
+
+Never publish account credentials, authentication tokens
+or personal school data.
+
+## ioBroker data points
+
+Examples for the first adapter instance:
+
+### Timetable
+
+- `sdui.0.timetable.weekGrid.html`
+- `sdui.0.timetable.weekGrid.json`
+- `sdui.0.timetable.weekGrid.navigationHtml`
+
+Additional timetable, substitution and holiday data
+points may be available depending on the SDUI response.
+
+### News and controls
+
+- `sdui.0.news.items`
+- `sdui.0.news.count`
+- `sdui.0.news.unread`
+- `sdui.0.news.markRead`
+- `sdui.0.news.markAllRead`
+- `sdui.0.control.refresh`
+
+Use control states only for their documented actions.
+
+## Privacy and security
+
+This adapter connects to SDUI using the configured account.
+
+- Keep your SDUI credentials private.
+- Do not publish ioBroker backups or instance configuration.
+- Do not share screenshots containing student information.
+- Check your school's rules and applicable privacy
+  requirements before displaying school data publicly.
+- News read-status actions may modify the read state
+  associated with your SDUI account.
+
+No real student data or credentials are included in this
+public source repository.
+
+## Development
+
+The adapter source code is located in the project root.
+The VIS 2 widget source code is in `widget-source/`.
+
+Install dependencies and run package tests:
+
+```bash
+npm ci
+npm run test:package
