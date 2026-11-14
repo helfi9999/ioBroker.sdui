@@ -47,8 +47,10 @@ jobs:
   # Release only when an explicit version tag is pushed.
   deploy:
     needs: [check-and-lint, adapter-tests]
-    # Temporarily disabled until npm Trusted Publishing is configured.
-    if: ${{ false }}
+    # Publish only on explicitly pushed version tags.
+    if: |
+      github.event_name == 'push' &&
+      startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     permissions:
       contents: write

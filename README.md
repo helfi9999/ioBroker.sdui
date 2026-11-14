@@ -158,6 +158,14 @@ npm run test:package
 
 ## Changelog
 
+### 0.6.25
+
+- Updated Node.js and ioBroker compatibility requirements.
+- Added admin translations for eleven languages.
+- Improved responsive admin configuration.
+- Updated repository metadata, documentation and CI workflow.
+
+
 ### 0.6.24
 
 - Combined SDUI timetable and school news widgets for VIS 2.

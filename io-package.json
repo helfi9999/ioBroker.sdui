@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "sdui",
-    "version": "0.6.24",
+    "version": "0.6.25",
     "titleLang": {
       "en": "Sdui timetable (experimental)",
       "de": "Sdui Stundenplan (experimentell)",
@@ -88,6 +88,19 @@
     },
     "icon": "sdui.png",
     "news": {
+      "0.6.25": {
+        "en": "Updated compatibility requirements, admin translations and repository metadata.",
+        "de": "Kompatibilitätsanforderungen, Admin-Übersetzungen und Repository-Metadaten aktualisiert.",
+        "es": "Actualizados los requisitos de compatibilidad, las traducciones de administración y los metadatos del repositorio.",
+        "fr": "Mise à jour des exigences de compatibilité, des traductions d'administration et des métadonnées du dépôt.",
+        "it": "Aggiornati i requisiti di compatibilità, le traduzioni di amministrazione e i metadati del repository.",
+        "nl": "Compatibiliteitseisen, beheervertalingen en repositorygegevens bijgewerkt.",
+        "pl": "Zaktualizowano wymagania zgodności, tłumaczenia panelu administracyjnego i metadane repozytorium.",
+        "pt": "Atualizados os requisitos de compatibilidade, as traduções de administração e os metadados do repositório.",
+        "ru": "Обновлены требования совместимости, переводы интерфейса администратора и метаданные репозитория.",
+        "uk": "Оновлено вимоги сумісності, переклади інтерфейсу адміністратора та метадані репозиторію.",
+        "zh-cn": "更新了兼容性要求、管理界面翻译和代码仓库元数据。"
+      },
       "0.6.24": {
         "en": "Unified SDUI timetable and news VIS 2 widgets with preview images.",
         "de": "Gemeinsame SDUI-VIS-2-Widgets fuer Stundenplan und Nachrichten mit Vorschaubildern.",
