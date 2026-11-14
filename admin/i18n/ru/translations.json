@@ -1,0 +1,11 @@
+{
+  "Days future (1–210); beyond 35 days refreshed daily": "Будущие дни (1–210); после 35 дней ежедневное обновление",
+  "Days past (0–21); für vorige Wochen mindestens 14": "Прошедшие дни (0–21); не менее 14 для предыдущих недель",
+  "Schule auswählen": "Выбрать школу",
+  "Schule suchen (Name oder Postleitzahl)": "Поиск школы (название или почтовый индекс)",
+  "Sdui password": "Пароль SDUI",
+  "Sdui username or email (identifier)": "Имя пользователя или электронная почта SDUI",
+  "Stundenplan-Benutzer auswählen": "Выбрать пользователя расписания",
+  "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "Неофициальная интеграция SDUI для школьного расписания и новостей. Учётные данные хранятся в защищённых настройках адаптера.",
+  "Update interval in minutes (min. 15)": "Интервал обновления в минутах (минимум 15)"
+}

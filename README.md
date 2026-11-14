@@ -154,3 +154,19 @@ Install dependencies and run package tests:
 ```bash
 npm ci
 npm run test:package
+
+
+## Changelog
+
+### 0.6.24
+
+- Combined SDUI timetable and school news widgets for VIS 2.
+- Added preview images for both widgets.
+- Retained legacy widget compatibility.
+
+
+## License
+
+Copyright (c) 2026 helfi9999 helfi9999@gmail.com
+
+MIT License. See [LICENSE](LICENSE).
