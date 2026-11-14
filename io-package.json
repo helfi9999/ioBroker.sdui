@@ -1,0 +1,116 @@
+{
+  "common": {
+    "name": "sdui",
+    "version": "0.6.24",
+    "titleLang": {
+      "en": "Sdui timetable (experimental)",
+      "de": "Sdui Stundenplan (experimentell)"
+    },
+    "desc": {
+      "en": "Unofficial Sdui timetable with username/password login",
+      "de": "Inoffizieller Sdui-Stundenplan mit Benutzername/Passwort-Anmeldung"
+    },
+    "authors": [
+      "Community prototype"
+    ],
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "enabled": true,
+    "messagebox": true,
+    "adminUI": {
+      "config": "json"
+    },
+    "type": "date-and-time",
+    "readme": "https://www.iobroker.com/docs/dev/adapterdev.md",
+    "dependencies": [
+      {
+        "js-controller": ">=5.0.19"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=6.0.0"
+      }
+    ],
+    "loglevel": "info",
+    "stopTimeout": 5000,
+    "tier": 3,
+    "visWidgets": {
+      "sdui": {
+        "name": "sdui",
+        "url": "vis-2-widgets-sdui/customWidgets.js",
+        "bundlerType": "module",
+        "i18n": "component",
+        "components": [
+          "SduiWeekWidget",
+          "SduiNewsWidget"
+        ]
+      },
+      "vis2SduiWidgets": {
+        "name": "vis2SduiWidgets",
+        "url": "vis-2-widgets-sdui-legacy/customWidgets.js",
+        "bundlerType": "module",
+        "i18n": "component",
+        "components": [
+          "SduiWeekWidget"
+        ]
+      },
+      "vis2SduiNewsWidgets": {
+        "name": "vis2SduiNewsWidgets",
+        "url": "vis-2-widgets-sdui-news/customWidgets.js",
+        "bundlerType": "module",
+        "i18n": "component",
+        "components": [
+          "SduiNewsWidget"
+        ]
+      }
+    },
+    "icon": "sdui.png",
+    "news": {
+      "0.6.24": {
+        "en": "Unified SDUI timetable and news VIS 2 widgets with preview images.",
+        "de": "Gemeinsame SDUI-VIS-2-Widgets fuer Stundenplan und Nachrichten mit Vorschaubildern."
+      }
+    },
+    "extIcon": "https://raw.githubusercontent.com/helfi9999/ioBroker.sdui/main/admin/sdui.png",
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    }
+  },
+  "native": {
+    "identifier": "",
+    "password": "",
+    "slink": "",
+    "userId": "",
+    "intervalMinutes": 30,
+    "daysPast": 1,
+    "daysFuture": 14,
+    "subjectColors": "",
+    "defaultColor": "#D8E7EF",
+    "substitutionColor": "#D58A16",
+    "cancellationColor": "#D43D3D",
+    "showWeekTimes": true,
+    "color_wirtschaft": "#F3B7D2",
+    "color_englisch": "#B9E0D8",
+    "color_erdkunde": "#B9E0D8",
+    "color_biologie": "#CCD4F2",
+    "color_sport": "#B9D9EE",
+    "color_mathematik": "#B9D9EE",
+    "color_deutsch": "#DED1EB",
+    "color_physik": "#B9E0D8",
+    "color_kunst": "#DDD0F0",
+    "color_klassenstunde": "#F4CFB6"
+  },
+  "encryptedNative": [
+    "password"
+  ],
+  "protectedNative": [
+    "password"
+  ],
+  "objects": [],
+  "instanceObjects": []
+}

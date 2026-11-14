@@ -1,0 +1,25 @@
+{
+  "name": "iobroker.vis-2-widgets-sdui",
+  "version": "0.3.12",
+  "private": true,
+  "type": "module",
+  "description": "React 18 prototype for Sdui VIS 2, aligned to official widget template",
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build",
+    "test": "node --test tests/*.test.js",
+    "check": "npm test && node --check src/parseWeek.js && node --check vite.config.js"
+  },
+  "dependencies": {
+    "@iobroker/types-vis-2": "2.13.17",
+    "@module-federation/vite": "^1.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "vite": "^5.4.0"
+  },
+  "files": [
+    "io-package.json",
+    "widgets"
+  ]
+}

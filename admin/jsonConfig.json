@@ -1,0 +1,76 @@
+{
+  "i18n": true,
+  "type": "panel",
+  "items": {
+    "intro": {
+      "type": "staticText",
+      "text": "Experimental read-only Sdui integration. Password stays in protected/encrypted adapter settings.",
+      "newLine": true,
+      "sm": 12
+    },
+    "identifier": {
+      "type": "text",
+      "label": "Sdui username or email (identifier)",
+      "newLine": true,
+      "sm": 12
+    },
+    "password": {
+      "type": "password",
+      "label": "Sdui password",
+      "newLine": true,
+      "sm": 12
+    },
+    "schoolSearch": {
+      "type": "text",
+      "label": "Schule suchen (Name oder Postleitzahl)",
+      "newLine": true,
+      "sm": 12
+    },
+    "slink": {
+      "type": "selectSendTo",
+      "label": "Schule auswählen",
+      "command": "searchSchools",
+      "jsonData": "{\"search\":\"${data.schoolSearch}\"}",
+      "alsoDependsOn": [
+        "schoolSearch"
+      ],
+      "manual": true,
+      "noTranslation": true,
+      "newLine": true,
+      "sm": 12
+    },
+    "userId": {
+      "type": "selectSendTo",
+      "label": "Stundenplan-Benutzer auswählen",
+      "command": "listTimetableUsers",
+      "manual": true,
+      "noTranslation": true,
+      "newLine": true,
+      "sm": 12
+    },
+    "intervalMinutes": {
+      "type": "number",
+      "label": "Update interval in minutes (min. 15)",
+      "min": 15,
+      "max": 1440,
+      "newLine": true,
+      "sm": 12
+    },
+    "daysPast": {
+      "type": "number",
+      "label": "Days past (0–21); für vorige Wochen mindestens 14",
+      "min": 0,
+      "max": 21,
+      "newLine": true,
+      "sm": 12
+    },
+    "daysFuture": {
+      "type": "number",
+      "label": "Days future (1–210); beyond 35 days refreshed daily",
+      "min": 1,
+      "max": 210,
+      "newLine": true,
+      "sm": 12
+    }
+  }
+}

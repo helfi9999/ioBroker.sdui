@@ -1,0 +1,9 @@
+import{g as m}from"./_commonjsHelpers-CqkleIqs.js";function l(r,n){for(var o=0;o<n.length;o++){const e=n[o];if(typeof e!="string"&&!Array.isArray(e)){for(const t in e)if(t!=="default"&&!(t in r)){const s=Object.getOwnPropertyDescriptor(e,t);s&&Object.defineProperty(r,t,s.get?s:{enumerable:!0,get:()=>e[t]})}}}return Object.freeze(Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}))}var c={exports:{}},a={};/**
+ * @license React
+ * react-jsx-dev-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var p=Symbol.for("react.fragment");a.Fragment=p;a.jsxDEV=void 0;c.exports=a;var u=c.exports;const g=m(u),f=l({__proto__:null,default:g},[u]),i=Reflect.get(f,"default")??f,d=i.Fragment,_=i.jsxDEV;export{d as Fragment,i as default,_ as jsxDEV};

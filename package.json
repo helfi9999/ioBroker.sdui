@@ -1,0 +1,46 @@
+{
+  "name": "iobroker.sdui",
+  "version": "0.6.24",
+  "description": "SDUI timetables and school news for ioBroker with VIS 2 widgets",
+  "main": "main.js",
+  "license": "MIT",
+  "author": "Community prototype",
+  "keywords": [
+    "ioBroker",
+    "sdui",
+    "timetable"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.2.3"
+  },
+  "files": [
+    "main.js",
+    "lib/",
+    "io-package.json",
+    "admin/",
+    "README.md",
+    "LICENSE",
+    "widgets/vis-2-widgets-sdui/",
+    "widgets/vis-2-widgets-sdui-legacy/",
+    "widgets/vis-2-widgets-sdui-news/"
+  ],
+  "scripts": {
+    "test:package": "mocha test/package.test.js --exit",
+    "test:integration": "mocha test/integration.test.js --exit"
+  },
+  "devDependencies": {
+    "@iobroker/testing": "^6.3.2",
+    "mocha": "^12.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helfi9999/ioBroker.sdui.git"
+  },
+  "homepage": "https://github.com/helfi9999/ioBroker.sdui#readme",
+  "bugs": {
+    "url": "https://github.com/helfi9999/ioBroker.sdui/issues"
+  }
+}

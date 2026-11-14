@@ -1,0 +1,36 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.tgz
+*.tar.gz
+*.bak
+*.bak-*
+*.vor-*
+package.json.vor-*
+io-package.json.vor-*
+.DS_Store
+.vscode/
+.idea/
+coverage/
+
+# Private Daten und Sicherungen
+*.backup*
+*.bak*
+*.vor-*
+*.sqlite
+*.db
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+config.json
+
+# Lokale Build- und Testdateien
+**/node_modules/
+**/coverage/
+**/.env
+**/.env.*

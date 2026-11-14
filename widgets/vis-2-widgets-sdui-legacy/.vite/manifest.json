@@ -1,0 +1,176 @@
+{
+  "__virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js": {
+    "file": "assets/_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js",
+    "name": "_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vite-preload-helper-C1FmrZbK.js"
+    ],
+    "dynamicImports": [
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__.js"
+    ]
+  },
+  "_helpers-BaFkHvNu.js": {
+    "file": "assets/helpers-BaFkHvNu.js",
+    "name": "helpers",
+    "imports": [
+      "_index-DyeWXyzC.js"
+    ]
+  },
+  "_index-CBB6WYXl.js": {
+    "file": "assets/index-CBB6WYXl.js",
+    "name": "index",
+    "imports": [
+      "_index-DyeWXyzC.js"
+    ]
+  },
+  "_index-D8qnCZPB.js": {
+    "file": "assets/index-D8qnCZPB.js",
+    "name": "index"
+  },
+  "_index-Dv4QEKjj.js": {
+    "file": "assets/index-Dv4QEKjj.js",
+    "name": "index",
+    "imports": [
+      "_index-D8qnCZPB.js"
+    ]
+  },
+  "_index-DyeWXyzC.js": {
+    "file": "assets/index-DyeWXyzC.js",
+    "name": "index"
+  },
+  "_vite-preload-helper-C1FmrZbK.js": {
+    "file": "assets/vite-preload-helper-C1FmrZbK.js",
+    "name": "vite-preload-helper"
+  },
+  "index.html": {
+    "file": "assets/index-AqS1fZQb.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "__virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js",
+      "_vite-preload-helper-C1FmrZbK.js"
+    ]
+  },
+  "src/SduiWeekWidgetLegacy.jsx": {
+    "file": "assets/SduiWeekWidgetLegacy-BGeE7xxP.js",
+    "name": "SduiWeekWidgetLegacy",
+    "src": "src/SduiWeekWidgetLegacy.jsx",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "__virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js",
+      "_vite-preload-helper-C1FmrZbK.js"
+    ]
+  },
+  "src/translations.js": {
+    "file": "assets/translations-Dzi8a-Gg.js",
+    "name": "translations",
+    "src": "src/translations.js",
+    "isEntry": true,
+    "isDynamicEntry": true
+  },
+  "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vis2SduiWidgets__customWidgets_js": {
+    "file": "customWidgets.js",
+    "name": "customWidgets",
+    "src": "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vis2SduiWidgets__customWidgets_js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vite-preload-helper-C1FmrZbK.js",
+      "_index-CBB6WYXl.js",
+      "_helpers-BaFkHvNu.js",
+      "_index-DyeWXyzC.js"
+    ],
+    "dynamicImports": [
+      "src/SduiWeekWidgetLegacy.jsx",
+      "src/translations.js",
+      "virtual:mf-localSharedImportMap:__mfe_internal__vis2SduiWidgets__mf_owner__1"
+    ]
+  },
+  "virtual:mf-localSharedImportMap:__mfe_internal__vis2SduiWidgets__mf_owner__1": {
+    "file": "assets/_virtual_mf-localSharedImportMap___mfe_internal__vis2SduiWidgets__mf_owner__1-yyUkNTim.js",
+    "name": "_virtual_mf-localSharedImportMap___mfe_internal__vis2SduiWidgets__mf_owner__1",
+    "src": "virtual:mf-localSharedImportMap:__mfe_internal__vis2SduiWidgets__mf_owner__1",
+    "isDynamicEntry": true,
+    "imports": [
+      "_vite-preload-helper-C1FmrZbK.js",
+      "_index-CBB6WYXl.js",
+      "_index-DyeWXyzC.js"
+    ],
+    "dynamicImports": [
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__.js",
+      "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__.js"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__1__H_A_I__hostAutoInit__H_A_I__.js": {
+    "file": "assets/hostInit-BsiJFu1c.js",
+    "name": "hostInit",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__1__H_A_I__hostAutoInit__H_A_I__.js",
+    "imports": [
+      "_vite-preload-helper-C1FmrZbK.js",
+      "_helpers-BaFkHvNu.js",
+      "_index-DyeWXyzC.js"
+    ],
+    "dynamicImports": [
+      "virtual:mf-REMOTE_ENTRY_ID:__mfe_internal__vis2SduiWidgets__customWidgets_js",
+      "virtual:mf-localSharedImportMap:__mfe_internal__vis2SduiWidgets__mf_owner__1"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__1__P_S__pendingShares__P_S__.js": {
+    "file": "assets/pendingShares-nSy4_dXd.js",
+    "name": "pendingShares",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__1__P_S__pendingShares__P_S__.js",
+    "imports": [
+      "_vite-preload-helper-C1FmrZbK.js"
+    ],
+    "dynamicImports": [
+      "__virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js",
+      "__virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__loadShare__shared-Bm7v1DSs.js",
+      "virtual:mf-localSharedImportMap:__mfe_internal__vis2SduiWidgets__mf_owner__1"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__.js": {
+    "file": "assets/_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__-CkNxMfL4.js",
+    "name": "_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react__prebuild__.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-D8qnCZPB.js"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__.js": {
+    "file": "assets/_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__-C1bVQBaL.js",
+    "name": "_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_1_jsx_mf_2_runtime__prebuild__.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-D8qnCZPB.js"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__.js": {
+    "file": "assets/_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__-hUETqTXw.js",
+    "name": "_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom__prebuild__.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-Dv4QEKjj.js",
+      "_index-D8qnCZPB.js"
+    ]
+  },
+  "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__.js": {
+    "file": "assets/_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__-DE2H6JXd.js",
+    "name": "_virtual_mf___mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__",
+    "src": "virtual:mf:__mfe_internal__vis2SduiWidgets__mf_owner__89230675692216__prebuild__react_mf_2_dom_mf_1_client__prebuild__.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-Dv4QEKjj.js",
+      "_index-D8qnCZPB.js"
+    ]
+  }
+}
