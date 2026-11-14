@@ -1,0 +1,11 @@
+{
+  "Days future (1–210); beyond 35 days refreshed daily": "Toekomstige dagen (1–210); na 35 dagen dagelijks vernieuwen",
+  "Days past (0–21); für vorige Wochen mindestens 14": "Afgelopen dagen (0–21); minstens 14 voor vorige weken",
+  "Schule auswählen": "School selecteren",
+  "Schule suchen (Name oder Postleitzahl)": "School zoeken (naam of postcode)",
+  "Sdui password": "SDUI-wachtwoord",
+  "Sdui username or email (identifier)": "SDUI-gebruikersnaam of e-mailadres",
+  "Stundenplan-Benutzer auswählen": "Roostergebruiker selecteren",
+  "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "Onofficiële SDUI-integratie voor schoolroosters en schoolnieuws. Aanmeldgegevens worden opgeslagen in beveiligde adapterinstellingen.",
+  "Update interval in minutes (min. 15)": "Vernieuwingsinterval in minuten (minimaal 15)"
+}

@@ -4,11 +4,29 @@
     "version": "0.6.24",
     "titleLang": {
       "en": "Sdui timetable (experimental)",
-      "de": "Sdui Stundenplan (experimentell)"
+      "de": "Sdui Stundenplan (experimentell)",
+      "es": "Horario de SDUI (experimental)",
+      "fr": "Emploi du temps SDUI (expérimental)",
+      "it": "Orario SDUI (sperimentale)",
+      "nl": "SDUI-rooster (experimenteel)",
+      "pl": "Plan lekcji SDUI (eksperymentalny)",
+      "pt": "Horário SDUI (experimental)",
+      "ru": "Расписание SDUI (экспериментальное)",
+      "uk": "Розклад SDUI (експериментальний)",
+      "zh-cn": "SDUI课程表（实验性）"
     },
     "desc": {
       "en": "Unofficial Sdui timetable with username/password login",
-      "de": "Inoffizieller Sdui-Stundenplan mit Benutzername/Passwort-Anmeldung"
+      "de": "Inoffizieller Sdui-Stundenplan mit Benutzername/Passwort-Anmeldung",
+      "es": "Horario no oficial de SDUI con inicio de sesión mediante usuario y contraseña",
+      "fr": "Emploi du temps SDUI non officiel avec connexion par identifiant et mot de passe",
+      "it": "Orario SDUI non ufficiale con accesso tramite nome utente e password",
+      "nl": "Onofficieel SDUI-rooster met aanmelding via gebruikersnaam en wachtwoord",
+      "pl": "Nieoficjalny plan lekcji SDUI z logowaniem za pomocą nazwy użytkownika i hasła",
+      "pt": "Horário SDUI não oficial com início de sessão por utilizador e palavra-passe",
+      "ru": "Неофициальное расписание SDUI с входом по имени пользователя и паролю",
+      "uk": "Неофіційний розклад SDUI із входом за іменем користувача та паролем",
+      "zh-cn": "使用用户名和密码登录的非官方SDUI课程表"
     },
     "authors": [
       "Community prototype"
@@ -27,12 +45,12 @@
     "readme": "https://www.iobroker.com/docs/dev/adapterdev.md",
     "dependencies": [
       {
-        "js-controller": ">=5.0.19"
+        "js-controller": ">=6.0.11"
       }
     ],
     "globalDependencies": [
       {
-        "admin": ">=6.0.0"
+        "admin": ">=7.6.20"
       }
     ],
     "loglevel": "info",
@@ -72,7 +90,16 @@
     "news": {
       "0.6.24": {
         "en": "Unified SDUI timetable and news VIS 2 widgets with preview images.",
-        "de": "Gemeinsame SDUI-VIS-2-Widgets fuer Stundenplan und Nachrichten mit Vorschaubildern."
+        "de": "Gemeinsame SDUI-VIS-2-Widgets fuer Stundenplan und Nachrichten mit Vorschaubildern.",
+        "es": "Widgets VIS 2 unificados de horarios y noticias de SDUI con imágenes de vista previa.",
+        "fr": "Widgets VIS 2 regroupant emplois du temps et actualités SDUI avec images d'aperçu.",
+        "it": "Widget VIS 2 unificati per orari e notizie SDUI con immagini di anteprima.",
+        "nl": "Gecombineerde VIS 2-widgets voor SDUI-roosters en nieuws met voorbeeldafbeeldingen.",
+        "pl": "Połączone widżety VIS 2 planu lekcji i wiadomości SDUI z obrazami podglądu.",
+        "pt": "Widgets VIS 2 unificados para horários e notícias SDUI com imagens de pré-visualização.",
+        "ru": "Объединённые виджеты VIS 2 для расписания и новостей SDUI с изображениями предпросмотра.",
+        "uk": "Об’єднані віджети VIS 2 для розкладу та новин SDUI із зображеннями попереднього перегляду.",
+        "zh-cn": "整合SDUI课程表和校园新闻的VIS 2小部件，包含预览图片。"
       }
     },
     "extIcon": "https://raw.githubusercontent.com/helfi9999/ioBroker.sdui/main/admin/sdui.png",

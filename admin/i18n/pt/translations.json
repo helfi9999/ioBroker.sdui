@@ -1,0 +1,11 @@
+{
+  "Days future (1–210); beyond 35 days refreshed daily": "Dias futuros (1–210); após 35 dias, atualização diária",
+  "Days past (0–21); für vorige Wochen mindestens 14": "Dias anteriores (0–21); pelo menos 14 para semanas anteriores",
+  "Schule auswählen": "Selecionar escola",
+  "Schule suchen (Name oder Postleitzahl)": "Procurar escola (nome ou código postal)",
+  "Sdui password": "Palavra-passe SDUI",
+  "Sdui username or email (identifier)": "Nome de utilizador ou e-mail SDUI",
+  "Stundenplan-Benutzer auswählen": "Selecionar utilizador do horário",
+  "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "Integração não oficial do SDUI para horários e notícias escolares. As credenciais são guardadas nas definições protegidas do adaptador.",
+  "Update interval in minutes (min. 15)": "Intervalo de atualização em minutos (mínimo 15)"
+}

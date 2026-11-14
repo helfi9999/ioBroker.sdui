@@ -4,27 +4,43 @@
   "items": {
     "intro": {
       "type": "staticText",
-      "text": "Experimental read-only Sdui integration. Password stays in protected/encrypted adapter settings.",
+      "text": "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.",
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "identifier": {
       "type": "text",
       "label": "Sdui username or email (identifier)",
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "password": {
       "type": "password",
       "label": "Sdui password",
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "schoolSearch": {
       "type": "text",
       "label": "Schule suchen (Name oder Postleitzahl)",
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "slink": {
       "type": "selectSendTo",
@@ -35,18 +51,24 @@
         "schoolSearch"
       ],
       "manual": true,
-      "noTranslation": true,
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "userId": {
       "type": "selectSendTo",
       "label": "Stundenplan-Benutzer auswählen",
       "command": "listTimetableUsers",
       "manual": true,
-      "noTranslation": true,
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "intervalMinutes": {
       "type": "number",
@@ -54,7 +76,11 @@
       "min": 15,
       "max": 1440,
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "daysPast": {
       "type": "number",
@@ -62,7 +88,11 @@
       "min": 0,
       "max": 21,
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     },
     "daysFuture": {
       "type": "number",
@@ -70,7 +100,11 @@
       "min": 1,
       "max": 210,
       "newLine": true,
-      "sm": 12
+      "sm": 12,
+      "xs": 12,
+      "md": 6,
+      "lg": 6,
+      "xl": 4
     }
   }
 }
