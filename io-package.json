@@ -3,17 +3,17 @@
     "name": "sdui",
     "version": "0.6.25",
     "titleLang": {
-      "en": "Sdui timetable (experimental)",
-      "de": "Sdui Stundenplan (experimentell)",
-      "es": "Horario de SDUI (experimental)",
-      "fr": "Emploi du temps SDUI (expérimental)",
-      "it": "Orario SDUI (sperimentale)",
-      "nl": "SDUI-rooster (experimenteel)",
-      "pl": "Plan lekcji SDUI (eksperymentalny)",
-      "pt": "Horário SDUI (experimental)",
-      "ru": "Расписание SDUI (экспериментальное)",
-      "uk": "Розклад SDUI (експериментальний)",
-      "zh-cn": "SDUI课程表（实验性）"
+      "en": "Sdui",
+      "de": "Sdui",
+      "es": "Sdui",
+      "fr": "Sdui",
+      "it": "Sdui",
+      "nl": "Sdui",
+      "pl": "Sdui",
+      "pt": "Sdui",
+      "ru": "Sdui",
+      "uk": "Sdui",
+      "zh-cn": "Sdui"
     },
     "desc": {
       "en": "Unofficial Sdui timetable with username/password login",
