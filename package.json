@@ -35,8 +35,7 @@
   "devDependencies": {
     "@iobroker/adapter-dev": "^1.5.0",
     "@iobroker/eslint-config": "^2.3.4",
-    "@iobroker/testing": "^6.3.2",
-    "eslint": "^9.39.5"
+    "@iobroker/testing": "^6.3.2"
   },
   "repository": {
     "type": "git",
