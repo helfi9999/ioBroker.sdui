@@ -158,6 +158,11 @@ npm run test:package
 
 ## Changelog
 
+### 0.6.28
+
+- Completed release note translations for all supported languages.
+
+
 ### 0.6.27
 
 - Added missing release notes for version 0.6.26.

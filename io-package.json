@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "sdui",
-    "version": "0.6.27",
+    "version": "0.6.28",
     "titleLang": {
       "en": "Sdui",
       "de": "Sdui",
@@ -88,13 +88,44 @@
     },
     "icon": "sdui.png",
     "news": {
+      "0.6.28": {
+        "en": "Completed release note translations for all supported languages.",
+        "de": "Versionshinweise für alle unterstützten Sprachen vervollständigt.",
+        "es": "Se completaron las traducciones de las notas de versión para todos los idiomas compatibles.",
+        "fr": "Traductions des notes de version complétées pour toutes les langues prises en charge.",
+        "it": "Completate le traduzioni delle note di rilascio per tutte le lingue supportate.",
+        "nl": "Vertalingen van de releaseopmerkingen voor alle ondersteunde talen voltooid.",
+        "pl": "Uzupełniono tłumaczenia informacji o wydaniu dla wszystkich obsługiwanych języków.",
+        "pt": "Concluídas as traduções das notas de versão para todos os idiomas suportados.",
+        "ru": "Завершён перевод примечаний к выпуску на все поддерживаемые языки.",
+        "uk": "Завершено переклад приміток до випуску всіма підтримуваними мовами.",
+        "zh-cn": "已完成所有支持语言的发行说明翻译。"
+      },
       "0.6.27": {
         "en": "Added missing release notes for version 0.6.26.",
-        "de": "Fehlende Versionshinweise für Version 0.6.26 ergänzt."
+        "de": "Fehlende Versionshinweise für Version 0.6.26 ergänzt.",
+        "es": "Añadidas las notas de versión que faltaban para la versión 0.6.26.",
+        "fr": "Ajout des notes de version manquantes pour la version 0.6.26.",
+        "it": "Aggiunte le note di rilascio mancanti per la versione 0.6.26.",
+        "nl": "Ontbrekende releaseopmerkingen voor versie 0.6.26 toegevoegd.",
+        "pl": "Dodano brakujące informacje o wydaniu wersji 0.6.26.",
+        "pt": "Adicionadas as notas de versão em falta para a versão 0.6.26.",
+        "ru": "Добавлены отсутствующие примечания к выпуску версии 0.6.26.",
+        "uk": "Додано відсутні примітки до випуску версії 0.6.26.",
+        "zh-cn": "补充了版本 0.6.26 缺失的发行说明。"
       },
       "0.6.26": {
         "en": "Renamed the adapter display title to Sdui in all supported languages.",
-        "de": "Anzeigename des Adapters in allen unterstützten Sprachen auf Sdui geändert."
+        "de": "Anzeigename des Adapters in allen unterstützten Sprachen auf Sdui geändert.",
+        "es": "Se cambió el nombre visible del adaptador a Sdui en todos los idiomas compatibles.",
+        "fr": "Le nom affiché de l'adaptateur a été changé en Sdui dans toutes les langues prises en charge.",
+        "it": "Il nome visualizzato dell'adattatore è stato cambiato in Sdui in tutte le lingue supportate.",
+        "nl": "De weergavenaam van de adapter is gewijzigd in Sdui in alle ondersteunde talen.",
+        "pl": "Zmieniono wyświetlaną nazwę adaptera na Sdui we wszystkich obsługiwanych językach.",
+        "pt": "O nome apresentado do adaptador foi alterado para Sdui em todos os idiomas suportados.",
+        "ru": "Отображаемое имя адаптера изменено на Sdui на всех поддерживаемых языках.",
+        "uk": "Відображувану назву адаптера змінено на Sdui всіма підтримуваними мовами.",
+        "zh-cn": "已将适配器在所有支持语言中的显示名称更改为 Sdui。"
       },
       "0.6.25": {
         "en": "Updated compatibility requirements, admin translations and repository metadata.",
