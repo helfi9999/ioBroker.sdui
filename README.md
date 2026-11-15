@@ -158,6 +158,11 @@ npm run test:package
 
 ## Changelog
 
+### 0.6.27
+
+- Added missing release notes for version 0.6.26.
+
+
 ### 0.6.26
 
 - Renamed adapter display title to "Sdui" in all supported languages.

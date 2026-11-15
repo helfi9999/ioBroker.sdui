@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "sdui",
-    "version": "0.6.26",
+    "version": "0.6.27",
     "titleLang": {
       "en": "Sdui",
       "de": "Sdui",
@@ -88,6 +88,14 @@
     },
     "icon": "sdui.png",
     "news": {
+      "0.6.27": {
+        "en": "Added missing release notes for version 0.6.26.",
+        "de": "Fehlende Versionshinweise für Version 0.6.26 ergänzt."
+      },
+      "0.6.26": {
+        "en": "Renamed the adapter display title to Sdui in all supported languages.",
+        "de": "Anzeigename des Adapters in allen unterstützten Sprachen auf Sdui geändert."
+      },
       "0.6.25": {
         "en": "Updated compatibility requirements, admin translations and repository metadata.",
         "de": "Kompatibilitätsanforderungen, Admin-Übersetzungen und Repository-Metadaten aktualisiert.",
