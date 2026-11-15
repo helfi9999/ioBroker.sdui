@@ -147,7 +147,7 @@ public source repository.
 ## Development
 
 The adapter source code is located in the project root.
-The VIS 2 widget source code is in `widget-source/`.
+The VIS 2 widget source code is in `src-widgets/`.
 
 Install dependencies and run package tests:
 

@@ -36,6 +36,6 @@ config.json
 **/.env.*
 
 # Generierte Widget-Builds innerhalb des Quellcodeordners
-/widget-source/widgets/
+/src-widgets/widgets/
 
 .commitinfo
