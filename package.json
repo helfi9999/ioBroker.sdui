@@ -14,7 +14,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^3.2.3"
+    "@iobroker/adapter-core": "^3.4.3"
   },
   "files": [
     "main.js",
@@ -29,10 +29,14 @@
   ],
   "scripts": {
     "test:package": "mocha test/package.test.js --exit",
-    "test:integration": "mocha test/integration.test.js --exit"
+    "test:integration": "mocha test/integration.test.js --exit",
+    "lint": "eslint main.js lib test"
   },
   "devDependencies": {
-    "@iobroker/testing": "^6.3.2"
+    "@iobroker/adapter-dev": "^1.5.0",
+    "@iobroker/eslint-config": "^2.3.4",
+    "@iobroker/testing": "^6.3.2",
+    "eslint": "^9.39.5"
   },
   "repository": {
     "type": "git",
