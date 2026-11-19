@@ -160,6 +160,8 @@ npm run test:package
 
 ### **WORK IN PROGRESS**
 
+- Added the official ioBroker release script for automated future releases.
+
 ### 0.6.28
 
 - Completed release note translations for all supported languages.
