@@ -196,6 +196,32 @@ class Sdui extends utils.Adapter {
     await this.poll();
   }
 
+  async ensureParentChannels(stateIds, checked = new Set()) {
+    const parents = new Set();
+
+    for (const id of stateIds) {
+      const parts = id.split('.');
+      for (let n = 1; n < parts.length; n++) {
+        parents.add(parts.slice(0, n).join('.'));
+      }
+    }
+
+    const sorted = [...parents].sort((a, b) =>
+      a.split('.').length - b.split('.').length || a.localeCompare(b)
+    );
+
+    for (const id of sorted) {
+      if (checked.has(id)) continue;
+
+      await this.setObjectNotExistsAsync(id, {
+        type: 'channel',
+        common: {name: id.split('.').pop()},
+        native: {}
+      });
+      checked.add(id);
+    }
+  }
+
   async createStates() {
     const states = {
       'info.connection': ['Connection established', 'boolean', 'indicator.connected', false],
@@ -242,9 +268,15 @@ class Sdui extends utils.Adapter {
       'substitutions.html.tomorrow': ['Vertretungen morgen (HTML für VIS)', 'string', 'html', ''],
       'substitutions.html.week': ['Vertretungen nächste 7 Tage (HTML für VIS)', 'string', 'html', '']
     };
-    await this.setObjectNotExistsAsync("control.refresh", {
+    await this.ensureParentChannels([
+      ...Object.keys(states),
+      'control.refresh',
+      'news.markRead',
+      'news.markAllRead'
+    ]);
+    await this.extendObjectAsync("control.refresh", {
       type: "state",
-      common: {name: "Stundenplan jetzt aktualisieren", type: "boolean", role: "button", read: true, write: true, def: false},
+      common: {name: "Stundenplan jetzt aktualisieren", type: "boolean", role: "button", read: false, write: true, def: false},
       native: {}
     });
     await this.setObjectNotExistsAsync('news.markRead', {
@@ -252,9 +284,9 @@ class Sdui extends utils.Adapter {
       common: {name: 'Mark one SDUI news item read (ID)', type: 'string', role: 'text', read: true, write: true, def: ''},
       native: {}
     });
-    await this.setObjectNotExistsAsync('news.markAllRead', {
+    await this.extendObjectAsync('news.markAllRead', {
       type: 'state',
-      common: {name: 'Mark all loaded SDUI news read', type: 'boolean', role: 'button', read: true, write: true, def: false},
+      common: {name: 'Mark all loaded SDUI news read', type: 'boolean', role: 'button', read: false, write: true, def: false},
       native: {}
     });
     for (const [id, [name, type, role, def]] of Object.entries(states)) {
@@ -268,12 +300,20 @@ class Sdui extends utils.Adapter {
     // Stable date + API lesson ID: lessons don't shift when the timetable changes.
     // Clean up stale states from removed lessons or outdated days after a successful API fetch.
     const desired = new Set();
+    const checkedChannels = new Set();
+
     for (const lesson of lessons) {
       const lessonId = String(lesson.id);
       if (!/^\d+$/.test(lessonId)) continue;
       const dayId = `d${lesson.date.replace(/-/g, '')}`;
       const base = `timetable.lessons.${dayId}.lesson_${lessonId}`;
       const values = lessonStateValues(lesson);
+
+      await this.ensureParentChannels(
+        Object.keys(values).map(field => `${base}.${field}`),
+        checkedChannels
+      );
+
       for (const [field, val] of Object.entries(values)) {
         const id = `${base}.${field}`;
         desired.add(id);
@@ -290,6 +330,31 @@ class Sdui extends utils.Adapter {
       if (rel.startsWith('timetable.lessons.') && !desired.has(rel) && objects[id].type === 'state') {
         await this.delObjectAsync(rel);
       }
+    }
+
+    // Remove obsolete lesson and day channels after their states are gone.
+    const desiredChannels = new Set();
+    for (const id of desired) {
+      const parts = id.split('.');
+      for (let n = 3; n < parts.length; n++) {
+        desiredChannels.add(parts.slice(0, n).join('.'));
+      }
+    }
+
+    const obsoleteChannels = Object.entries(objects)
+      .map(([id, obj]) => ({
+        rel: id.startsWith(`${this.namespace}.`) ? id.slice(this.namespace.length + 1) : id,
+        type: obj.type
+      }))
+      .filter(({rel, type}) =>
+        type === 'channel' &&
+        /^timetable\.lessons\.d\d{8}(?:\.lesson_\d+)?$/.test(rel) &&
+        !desiredChannels.has(rel)
+      )
+      .sort((a, b) => b.rel.split('.').length - a.rel.split('.').length);
+
+    for (const {rel} of obsoleteChannels) {
+      await this.delObjectAsync(rel);
     }
   }
 

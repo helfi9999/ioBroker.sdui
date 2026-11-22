@@ -29,7 +29,7 @@
       "name": "Stundenplan jetzt aktualisieren",
       "type": "boolean",
       "role": "button",
-      "read": true,
+      "read": false,
       "write": true
     },
     "native": {},
@@ -257,7 +257,7 @@
       "name": "Mark all loaded SDUI news read",
       "type": "boolean",
       "role": "button",
-      "read": true,
+      "read": false,
       "write": true
     },
     "native": {},
@@ -33238,5 +33238,2253 @@
     },
     "native": {},
     "_id": "sdui.0.timetable.weekGrid.weeks.json"
+  },
+  "sdui.0.cancellations": {
+    "_id": "sdui.0.cancellations",
+    "type": "channel",
+    "common": {
+      "name": "cancellations"
+    },
+    "native": {}
+  },
+  "sdui.0.control": {
+    "_id": "sdui.0.control",
+    "type": "channel",
+    "common": {
+      "name": "control"
+    },
+    "native": {}
+  },
+  "sdui.0.holidays": {
+    "_id": "sdui.0.holidays",
+    "type": "channel",
+    "common": {
+      "name": "holidays"
+    },
+    "native": {}
+  },
+  "sdui.0.info": {
+    "_id": "sdui.0.info",
+    "type": "channel",
+    "common": {
+      "name": "info"
+    },
+    "native": {}
+  },
+  "sdui.0.news": {
+    "_id": "sdui.0.news",
+    "type": "channel",
+    "common": {
+      "name": "news"
+    },
+    "native": {}
+  },
+  "sdui.0.substitutions": {
+    "_id": "sdui.0.substitutions",
+    "type": "channel",
+    "common": {
+      "name": "substitutions"
+    },
+    "native": {}
+  },
+  "sdui.0.substitutions.html": {
+    "_id": "sdui.0.substitutions.html",
+    "type": "channel",
+    "common": {
+      "name": "html"
+    },
+    "native": {}
+  },
+  "sdui.0.substitutions.raw": {
+    "_id": "sdui.0.substitutions.raw",
+    "type": "channel",
+    "common": {
+      "name": "raw"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable": {
+    "_id": "sdui.0.timetable",
+    "type": "channel",
+    "common": {
+      "name": "timetable"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.html": {
+    "_id": "sdui.0.timetable.html",
+    "type": "channel",
+    "common": {
+      "name": "html"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons": {
+    "_id": "sdui.0.timetable.lessons",
+    "type": "channel",
+    "common": {
+      "name": "lessons"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000001": {
+    "_id": "sdui.0.timetable.lessons.d00000001",
+    "type": "channel",
+    "common": {
+      "name": "d00000001"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000001.lesson_000001": {
+    "_id": "sdui.0.timetable.lessons.d00000001.lesson_000001",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000001"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000002": {
+    "_id": "sdui.0.timetable.lessons.d00000002",
+    "type": "channel",
+    "common": {
+      "name": "d00000002"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000002.lesson_000002": {
+    "_id": "sdui.0.timetable.lessons.d00000002.lesson_000002",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000002"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000003": {
+    "_id": "sdui.0.timetable.lessons.d00000003",
+    "type": "channel",
+    "common": {
+      "name": "d00000003"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000003.lesson_000003": {
+    "_id": "sdui.0.timetable.lessons.d00000003.lesson_000003",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000003"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000004": {
+    "_id": "sdui.0.timetable.lessons.d00000004",
+    "type": "channel",
+    "common": {
+      "name": "d00000004"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000004.lesson_000004": {
+    "_id": "sdui.0.timetable.lessons.d00000004.lesson_000004",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000004"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000005": {
+    "_id": "sdui.0.timetable.lessons.d00000005",
+    "type": "channel",
+    "common": {
+      "name": "d00000005"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000005.lesson_000005": {
+    "_id": "sdui.0.timetable.lessons.d00000005.lesson_000005",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000005"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000006": {
+    "_id": "sdui.0.timetable.lessons.d00000006",
+    "type": "channel",
+    "common": {
+      "name": "d00000006"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000006.lesson_000006": {
+    "_id": "sdui.0.timetable.lessons.d00000006.lesson_000006",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000006"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000006.lesson_000007": {
+    "_id": "sdui.0.timetable.lessons.d00000006.lesson_000007",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000007"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000006.lesson_000008": {
+    "_id": "sdui.0.timetable.lessons.d00000006.lesson_000008",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000008"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000006.lesson_000009": {
+    "_id": "sdui.0.timetable.lessons.d00000006.lesson_000009",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000009"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007": {
+    "_id": "sdui.0.timetable.lessons.d00000007",
+    "type": "channel",
+    "common": {
+      "name": "d00000007"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007.lesson_000010": {
+    "_id": "sdui.0.timetable.lessons.d00000007.lesson_000010",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000010"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007.lesson_000011": {
+    "_id": "sdui.0.timetable.lessons.d00000007.lesson_000011",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000011"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007.lesson_000012": {
+    "_id": "sdui.0.timetable.lessons.d00000007.lesson_000012",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000012"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007.lesson_000013": {
+    "_id": "sdui.0.timetable.lessons.d00000007.lesson_000013",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000013"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000007.lesson_000014": {
+    "_id": "sdui.0.timetable.lessons.d00000007.lesson_000014",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000014"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008": {
+    "_id": "sdui.0.timetable.lessons.d00000008",
+    "type": "channel",
+    "common": {
+      "name": "d00000008"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008.lesson_000015": {
+    "_id": "sdui.0.timetable.lessons.d00000008.lesson_000015",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000015"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008.lesson_000016": {
+    "_id": "sdui.0.timetable.lessons.d00000008.lesson_000016",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000016"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008.lesson_000017": {
+    "_id": "sdui.0.timetable.lessons.d00000008.lesson_000017",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000017"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008.lesson_000018": {
+    "_id": "sdui.0.timetable.lessons.d00000008.lesson_000018",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000018"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000008.lesson_000019": {
+    "_id": "sdui.0.timetable.lessons.d00000008.lesson_000019",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000019"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009": {
+    "_id": "sdui.0.timetable.lessons.d00000009",
+    "type": "channel",
+    "common": {
+      "name": "d00000009"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000020": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000020",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000020"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000021": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000021",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000021"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000022": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000022",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000022"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000023": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000023",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000023"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000024": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000024",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000024"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000009.lesson_000025": {
+    "_id": "sdui.0.timetable.lessons.d00000009.lesson_000025",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000025"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000010": {
+    "_id": "sdui.0.timetable.lessons.d00000010",
+    "type": "channel",
+    "common": {
+      "name": "d00000010"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000010.lesson_000026": {
+    "_id": "sdui.0.timetable.lessons.d00000010.lesson_000026",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000026"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000010.lesson_000027": {
+    "_id": "sdui.0.timetable.lessons.d00000010.lesson_000027",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000027"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000010.lesson_000028": {
+    "_id": "sdui.0.timetable.lessons.d00000010.lesson_000028",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000028"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000010.lesson_000029": {
+    "_id": "sdui.0.timetable.lessons.d00000010.lesson_000029",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000029"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011": {
+    "_id": "sdui.0.timetable.lessons.d00000011",
+    "type": "channel",
+    "common": {
+      "name": "d00000011"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000030": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000030",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000030"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000031": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000031",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000031"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000032": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000032",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000032"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000033": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000033",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000033"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000034": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000034",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000034"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000035": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000035",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000035"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000011.lesson_000036": {
+    "_id": "sdui.0.timetable.lessons.d00000011.lesson_000036",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000036"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012": {
+    "_id": "sdui.0.timetable.lessons.d00000012",
+    "type": "channel",
+    "common": {
+      "name": "d00000012"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000037": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000037",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000037"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000038": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000038",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000038"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000039": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000039",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000039"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000040": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000040",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000040"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000041": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000041",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000041"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000012.lesson_000042": {
+    "_id": "sdui.0.timetable.lessons.d00000012.lesson_000042",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000042"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013": {
+    "_id": "sdui.0.timetable.lessons.d00000013",
+    "type": "channel",
+    "common": {
+      "name": "d00000013"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000043": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000043",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000043"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000044": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000044",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000044"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000045": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000045",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000045"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000046": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000046",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000046"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000047": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000047",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000047"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000013.lesson_000048": {
+    "_id": "sdui.0.timetable.lessons.d00000013.lesson_000048",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000048"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014": {
+    "_id": "sdui.0.timetable.lessons.d00000014",
+    "type": "channel",
+    "common": {
+      "name": "d00000014"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000049": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000049",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000049"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000050": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000050",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000050"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000051": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000051",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000051"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000052": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000052",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000052"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000053": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000053",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000053"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000054": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000054",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000054"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000014.lesson_000055": {
+    "_id": "sdui.0.timetable.lessons.d00000014.lesson_000055",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000055"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015": {
+    "_id": "sdui.0.timetable.lessons.d00000015",
+    "type": "channel",
+    "common": {
+      "name": "d00000015"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000056": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000056",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000056"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000057": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000057",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000057"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000058": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000058",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000058"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000059": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000059",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000059"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000060": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000060",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000060"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000061": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000061",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000061"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000015.lesson_000062": {
+    "_id": "sdui.0.timetable.lessons.d00000015.lesson_000062",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000062"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016": {
+    "_id": "sdui.0.timetable.lessons.d00000016",
+    "type": "channel",
+    "common": {
+      "name": "d00000016"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000063": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000063",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000063"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000064": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000064",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000064"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000065": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000065",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000065"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000066": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000066",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000066"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000067": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000067",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000067"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000068": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000068",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000068"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000016.lesson_000069": {
+    "_id": "sdui.0.timetable.lessons.d00000016.lesson_000069",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000069"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017": {
+    "_id": "sdui.0.timetable.lessons.d00000017",
+    "type": "channel",
+    "common": {
+      "name": "d00000017"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000070": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000070",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000070"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000071": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000071",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000071"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000072": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000072",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000072"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000073": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000073",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000073"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000074": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000074",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000074"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000017.lesson_000075": {
+    "_id": "sdui.0.timetable.lessons.d00000017.lesson_000075",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000075"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018": {
+    "_id": "sdui.0.timetable.lessons.d00000018",
+    "type": "channel",
+    "common": {
+      "name": "d00000018"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000076": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000076",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000076"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000077": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000077",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000077"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000078": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000078",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000078"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000079": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000079",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000079"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000080": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000080",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000080"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000018.lesson_000081": {
+    "_id": "sdui.0.timetable.lessons.d00000018.lesson_000081",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000081"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019": {
+    "_id": "sdui.0.timetable.lessons.d00000019",
+    "type": "channel",
+    "common": {
+      "name": "d00000019"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000082": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000082",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000082"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000083": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000083",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000083"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000084": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000084",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000084"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000085": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000085",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000085"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000086": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000086",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000086"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000087": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000087",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000087"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000019.lesson_000088": {
+    "_id": "sdui.0.timetable.lessons.d00000019.lesson_000088",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000088"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020": {
+    "_id": "sdui.0.timetable.lessons.d00000020",
+    "type": "channel",
+    "common": {
+      "name": "d00000020"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000089": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000089",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000089"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000090": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000090",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000090"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000091": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000091",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000091"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000092": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000092",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000092"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000093": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000093",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000093"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000094": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000094",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000094"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000020.lesson_000095": {
+    "_id": "sdui.0.timetable.lessons.d00000020.lesson_000095",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000095"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021": {
+    "_id": "sdui.0.timetable.lessons.d00000021",
+    "type": "channel",
+    "common": {
+      "name": "d00000021"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000096": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000096",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000096"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000097": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000097",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000097"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000098": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000098",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000098"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000099": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000099",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000099"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000100": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000100",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000100"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000101": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000101",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000101"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000021.lesson_000102": {
+    "_id": "sdui.0.timetable.lessons.d00000021.lesson_000102",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000102"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022": {
+    "_id": "sdui.0.timetable.lessons.d00000022",
+    "type": "channel",
+    "common": {
+      "name": "d00000022"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000103": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000103",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000103"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000104": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000104",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000104"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000105": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000105",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000105"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000106": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000106",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000106"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000107": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000107",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000107"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000022.lesson_000108": {
+    "_id": "sdui.0.timetable.lessons.d00000022.lesson_000108",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000108"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023": {
+    "_id": "sdui.0.timetable.lessons.d00000023",
+    "type": "channel",
+    "common": {
+      "name": "d00000023"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000109": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000109",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000109"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000110": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000110",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000110"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000111": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000111",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000111"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000112": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000112",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000112"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000113": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000113",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000113"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000023.lesson_000114": {
+    "_id": "sdui.0.timetable.lessons.d00000023.lesson_000114",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000114"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024": {
+    "_id": "sdui.0.timetable.lessons.d00000024",
+    "type": "channel",
+    "common": {
+      "name": "d00000024"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000115": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000115",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000115"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000116": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000116",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000116"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000117": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000117",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000117"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000118": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000118",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000118"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000119": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000119",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000119"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000120": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000120",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000120"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000024.lesson_000121": {
+    "_id": "sdui.0.timetable.lessons.d00000024.lesson_000121",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000121"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025": {
+    "_id": "sdui.0.timetable.lessons.d00000025",
+    "type": "channel",
+    "common": {
+      "name": "d00000025"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000122": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000122",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000122"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000123": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000123",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000123"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000124": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000124",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000124"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000125": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000125",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000125"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000126": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000126",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000126"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000127": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000127",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000127"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000025.lesson_000128": {
+    "_id": "sdui.0.timetable.lessons.d00000025.lesson_000128",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000128"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026": {
+    "_id": "sdui.0.timetable.lessons.d00000026",
+    "type": "channel",
+    "common": {
+      "name": "d00000026"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000129": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000129",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000129"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000130": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000130",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000130"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000131": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000131",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000131"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000132": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000132",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000132"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000133": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000133",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000133"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000134": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000134",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000134"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000026.lesson_000135": {
+    "_id": "sdui.0.timetable.lessons.d00000026.lesson_000135",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000135"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027": {
+    "_id": "sdui.0.timetable.lessons.d00000027",
+    "type": "channel",
+    "common": {
+      "name": "d00000027"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000136": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000136",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000136"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000137": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000137",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000137"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000138": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000138",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000138"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000139": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000139",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000139"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000140": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000140",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000140"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000027.lesson_000141": {
+    "_id": "sdui.0.timetable.lessons.d00000027.lesson_000141",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000141"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028": {
+    "_id": "sdui.0.timetable.lessons.d00000028",
+    "type": "channel",
+    "common": {
+      "name": "d00000028"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000142": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000142",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000142"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000143": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000143",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000143"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000144": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000144",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000144"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000145": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000145",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000145"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000146": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000146",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000146"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000028.lesson_000147": {
+    "_id": "sdui.0.timetable.lessons.d00000028.lesson_000147",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000147"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029": {
+    "_id": "sdui.0.timetable.lessons.d00000029",
+    "type": "channel",
+    "common": {
+      "name": "d00000029"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000148": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000148",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000148"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000149": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000149",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000149"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000150": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000150",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000150"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000151": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000151",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000151"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000152": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000152",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000152"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000153": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000153",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000153"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000029.lesson_000154": {
+    "_id": "sdui.0.timetable.lessons.d00000029.lesson_000154",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000154"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030": {
+    "_id": "sdui.0.timetable.lessons.d00000030",
+    "type": "channel",
+    "common": {
+      "name": "d00000030"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000155": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000155",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000155"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000156": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000156",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000156"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000157": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000157",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000157"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000158": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000158",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000158"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000159": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000159",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000159"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000160": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000160",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000160"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000030.lesson_000161": {
+    "_id": "sdui.0.timetable.lessons.d00000030.lesson_000161",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000161"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031": {
+    "_id": "sdui.0.timetable.lessons.d00000031",
+    "type": "channel",
+    "common": {
+      "name": "d00000031"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000162": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000162",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000162"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000163": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000163",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000163"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000164": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000164",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000164"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000165": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000165",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000165"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000166": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000166",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000166"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000167": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000167",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000167"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000031.lesson_000168": {
+    "_id": "sdui.0.timetable.lessons.d00000031.lesson_000168",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000168"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032": {
+    "_id": "sdui.0.timetable.lessons.d00000032",
+    "type": "channel",
+    "common": {
+      "name": "d00000032"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000169": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000169",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000169"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000170": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000170",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000170"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000171": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000171",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000171"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000172": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000172",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000172"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000173": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000173",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000173"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000032.lesson_000174": {
+    "_id": "sdui.0.timetable.lessons.d00000032.lesson_000174",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000174"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033": {
+    "_id": "sdui.0.timetable.lessons.d00000033",
+    "type": "channel",
+    "common": {
+      "name": "d00000033"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000175": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000175",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000175"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000176": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000176",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000176"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000177": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000177",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000177"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000178": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000178",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000178"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000179": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000179",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000179"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000033.lesson_000180": {
+    "_id": "sdui.0.timetable.lessons.d00000033.lesson_000180",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000180"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034": {
+    "_id": "sdui.0.timetable.lessons.d00000034",
+    "type": "channel",
+    "common": {
+      "name": "d00000034"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000181": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000181",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000181"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000182": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000182",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000182"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000183": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000183",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000183"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000184": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000184",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000184"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000185": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000185",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000185"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000186": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000186",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000186"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000034.lesson_000187": {
+    "_id": "sdui.0.timetable.lessons.d00000034.lesson_000187",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000187"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035": {
+    "_id": "sdui.0.timetable.lessons.d00000035",
+    "type": "channel",
+    "common": {
+      "name": "d00000035"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000188": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000188",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000188"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000189": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000189",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000189"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000190": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000190",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000190"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000191": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000191",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000191"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000192": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000192",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000192"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000193": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000193",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000193"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000035.lesson_000194": {
+    "_id": "sdui.0.timetable.lessons.d00000035.lesson_000194",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000194"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036": {
+    "_id": "sdui.0.timetable.lessons.d00000036",
+    "type": "channel",
+    "common": {
+      "name": "d00000036"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000195": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000195",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000195"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000196": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000196",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000196"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000197": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000197",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000197"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000198": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000198",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000198"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000199": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000199",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000199"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000200": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000200",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000200"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000036.lesson_000201": {
+    "_id": "sdui.0.timetable.lessons.d00000036.lesson_000201",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000201"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037": {
+    "_id": "sdui.0.timetable.lessons.d00000037",
+    "type": "channel",
+    "common": {
+      "name": "d00000037"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000202": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000202",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000202"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000203": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000203",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000203"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000204": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000204",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000204"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000205": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000205",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000205"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000206": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000206",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000206"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000037.lesson_000207": {
+    "_id": "sdui.0.timetable.lessons.d00000037.lesson_000207",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000207"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038": {
+    "_id": "sdui.0.timetable.lessons.d00000038",
+    "type": "channel",
+    "common": {
+      "name": "d00000038"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000208": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000208",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000208"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000209": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000209",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000209"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000210": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000210",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000210"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000211": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000211",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000211"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000212": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000212",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000212"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000038.lesson_000213": {
+    "_id": "sdui.0.timetable.lessons.d00000038.lesson_000213",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000213"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039": {
+    "_id": "sdui.0.timetable.lessons.d00000039",
+    "type": "channel",
+    "common": {
+      "name": "d00000039"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000214": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000214",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000214"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000215": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000215",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000215"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000216": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000216",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000216"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000217": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000217",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000217"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000218": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000218",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000218"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000219": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000219",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000219"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000039.lesson_000220": {
+    "_id": "sdui.0.timetable.lessons.d00000039.lesson_000220",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000220"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040": {
+    "_id": "sdui.0.timetable.lessons.d00000040",
+    "type": "channel",
+    "common": {
+      "name": "d00000040"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000221": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000221",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000221"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000222": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000222",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000222"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000223": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000223",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000223"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000224": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000224",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000224"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000225": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000225",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000225"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000226": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000226",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000226"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.lessons.d00000040.lesson_000227": {
+    "_id": "sdui.0.timetable.lessons.d00000040.lesson_000227",
+    "type": "channel",
+    "common": {
+      "name": "lesson_000227"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.raw": {
+    "_id": "sdui.0.timetable.raw",
+    "type": "channel",
+    "common": {
+      "name": "raw"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.weekGrid": {
+    "_id": "sdui.0.timetable.weekGrid",
+    "type": "channel",
+    "common": {
+      "name": "weekGrid"
+    },
+    "native": {}
+  },
+  "sdui.0.timetable.weekGrid.weeks": {
+    "_id": "sdui.0.timetable.weekGrid.weeks",
+    "type": "channel",
+    "common": {
+      "name": "weeks"
+    },
+    "native": {}
   }
 }
