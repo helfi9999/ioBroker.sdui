@@ -7,6 +7,7 @@ const { simpleLessons } = require('./lib/simple-json');
 const { weekSchedule, renderWeekGrid, renderWeekNavigator } = require('./lib/week-grid');
 const { normalizeHolidays, renderHolidayHtml, daysBetween } = require('./lib/holidays');
 const { normalizeNews, parseSeenIds } = require('./lib/news');
+const {updateObjectName} = require('./lib/object-names');
 
 class Sdui extends utils.Adapter {
   constructor(options = {}) {
@@ -290,9 +291,13 @@ class Sdui extends utils.Adapter {
       native: {}
     });
     for (const [id, [name, type, role, def]] of Object.entries(states)) {
+      const existing = await this.getObjectAsync(id);
+
       await this.setObjectNotExistsAsync(id, {
         type: 'state', common: {name, type, role, read: true, write: false, def}, native: {}
       });
+
+      await updateObjectName(this, id, existing, name);
     }
   }
 
@@ -301,6 +306,7 @@ class Sdui extends utils.Adapter {
     // Clean up stale states from removed lessons or outdated days after a successful API fetch.
     const desired = new Set();
     const checkedChannels = new Set();
+    const existingLessonObjects = await this.getAdapterObjectsAsync();
 
     for (const lesson of lessons) {
       const lessonId = String(lesson.id);
@@ -321,6 +327,12 @@ class Sdui extends utils.Adapter {
         await this.setObjectNotExistsAsync(id, {
           type: 'state', common: {name, type, role, read: true, write: false}, native: {}
         });
+
+        const existing = existingLessonObjects[`${this.namespace}.${id}`]
+          || existingLessonObjects[id];
+
+        await updateObjectName(this, id, existing, name);
+
         await this.setStateAsync(id, {val, ack: true});
       }
     }
