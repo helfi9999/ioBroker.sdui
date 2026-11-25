@@ -42,7 +42,7 @@
       "config": "json"
     },
     "type": "date-and-time",
-    "readme": "https://www.iobroker.com/docs/dev/adapterdev.md",
+    "readme": "https://github.com/helfi9999/ioBroker.sdui/blob/main/README.md",
     "dependencies": [
       {
         "js-controller": ">=6.0.11"
@@ -181,16 +181,16 @@
     "substitutionColor": "#D58A16",
     "cancellationColor": "#D43D3D",
     "showWeekTimes": true,
-    "color_wirtschaft": "#F3B7D2",
-    "color_englisch": "#B9E0D8",
-    "color_erdkunde": "#B9E0D8",
-    "color_biologie": "#CCD4F2",
-    "color_sport": "#B9D9EE",
-    "color_mathematik": "#B9D9EE",
-    "color_deutsch": "#DED1EB",
-    "color_physik": "#B9E0D8",
-    "color_kunst": "#DDD0F0",
-    "color_klassenstunde": "#F4CFB6"
+    "color_economics": "",
+    "color_english": "",
+    "color_geography": "",
+    "color_biology": "",
+    "color_sports": "",
+    "color_mathematics": "",
+    "color_german": "",
+    "color_physics": "",
+    "color_art": "",
+    "color_homeroom": ""
   },
   "encryptedNative": [
     "password"

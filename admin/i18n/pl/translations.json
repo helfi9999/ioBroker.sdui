@@ -1,11 +1,11 @@
 {
   "Days future (1–210); beyond 35 days refreshed daily": "Przyszłe dni (1–210); po 35 dniach odświeżanie codziennie",
-  "Days past (0–21); für vorige Wochen mindestens 14": "Poprzednie dni (0–21); co najmniej 14 dla poprzednich tygodni",
-  "Schule auswählen": "Wybierz szkołę",
-  "Schule suchen (Name oder Postleitzahl)": "Wyszukaj szkołę (nazwa lub kod pocztowy)",
+  "Days past (0–21); at least 14 for previous weeks": "Poprzednie dni (0–21); co najmniej 14 dla poprzednich tygodni",
+  "Select school": "Wybierz szkołę",
+  "Search school (name or postal code)": "Wyszukaj szkołę (nazwa lub kod pocztowy)",
   "Sdui password": "Hasło SDUI",
   "Sdui username or email (identifier)": "Nazwa użytkownika lub adres e-mail SDUI",
-  "Stundenplan-Benutzer auswählen": "Wybierz użytkownika planu lekcji",
+  "Select timetable user": "Wybierz użytkownika planu lekcji",
   "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "Nieoficjalna integracja SDUI z planem lekcji i wiadomościami szkolnymi. Dane logowania są przechowywane w chronionych ustawieniach adaptera.",
   "Update interval in minutes (min. 15)": "Interwał aktualizacji w minutach (minimum 15)"
 }

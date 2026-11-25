@@ -1,11 +1,11 @@
 {
   "Days future (1–210); beyond 35 days refreshed daily": "Майбутні дні (1–210); після 35 днів щоденне оновлення",
-  "Days past (0–21); für vorige Wochen mindestens 14": "Минулі дні (0–21); щонайменше 14 для попередніх тижнів",
-  "Schule auswählen": "Вибрати школу",
-  "Schule suchen (Name oder Postleitzahl)": "Пошук школи (назва або поштовий індекс)",
+  "Days past (0–21); at least 14 for previous weeks": "Минулі дні (0–21); щонайменше 14 для попередніх тижнів",
+  "Select school": "Вибрати школу",
+  "Search school (name or postal code)": "Пошук школи (назва або поштовий індекс)",
   "Sdui password": "Пароль SDUI",
   "Sdui username or email (identifier)": "Ім’я користувача або електронна пошта SDUI",
-  "Stundenplan-Benutzer auswählen": "Вибрати користувача розкладу",
+  "Select timetable user": "Вибрати користувача розкладу",
   "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "Неофіційна інтеграція SDUI для шкільного розкладу та новин. Облікові дані зберігаються в захищених налаштуваннях адаптера.",
   "Update interval in minutes (min. 15)": "Інтервал оновлення у хвилинах (мінімум 15)"
 }

@@ -34,7 +34,7 @@
     },
     "schoolSearch": {
       "type": "text",
-      "label": "Schule suchen (Name oder Postleitzahl)",
+      "label": "Search school (name or postal code)",
       "newLine": true,
       "sm": 12,
       "xs": 12,
@@ -44,7 +44,7 @@
     },
     "slink": {
       "type": "selectSendTo",
-      "label": "Schule auswählen",
+      "label": "Select school",
       "command": "searchSchools",
       "jsonData": "{\"search\":\"${data.schoolSearch}\"}",
       "alsoDependsOn": [
@@ -60,7 +60,7 @@
     },
     "userId": {
       "type": "selectSendTo",
-      "label": "Stundenplan-Benutzer auswählen",
+      "label": "Select timetable user",
       "command": "listTimetableUsers",
       "manual": true,
       "newLine": true,
@@ -84,7 +84,7 @@
     },
     "daysPast": {
       "type": "number",
-      "label": "Days past (0–21); für vorige Wochen mindestens 14",
+      "label": "Days past (0–21); at least 14 for previous weeks",
       "min": 0,
       "max": 21,
       "newLine": true,

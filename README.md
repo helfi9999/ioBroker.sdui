@@ -3,7 +3,9 @@
 Unofficial community adapter for SDUI school timetables and
 school news in ioBroker, including two VIS 2 widgets.
 
-**Version:** 0.6.24
+**Official SDUI website:** https://sdui.de/
+
+**Version:** 0.6.28
 **License:** MIT
 
 > This is an independent community project.
@@ -39,11 +41,11 @@ The adapter includes a widget set named **SDUI Widgets**.
 
 Two widgets are available:
 
-1. **Stundenplan (inventwo-Stil)**
+1. **Timetable (inventwo style)**
    - Weekly timetable display
    - Configurable appearance
 
-2. **SDUI Logo mit News-Dialog**
+2. **SDUI logo with news dialog**
    - SDUI logo
    - Unread news indicator
    - News dialog
@@ -67,19 +69,15 @@ the SDUI account and the school's configuration.
 
 ## Installation
 
-This project is currently preparing for an official
-ioBroker repository release.
+The adapter is published on npm as `iobroker.sdui`.
 
-GitHub repository:
+Installation through the ioBroker adapter list will be available
+once the adapter has been added to the official ioBroker repository.
 
-https://github.com/helfi9999/ioBroker.sdui
+Until then, the adapter is intended for experienced users
+testing the community release.
 
-Until the adapter has been published on npm and added to
-the ioBroker repository, installation is intended for
-experienced users testing a community adapter.
-
-Back up your ioBroker installation before installing or
-updating a development version.
+Back up your ioBroker installation before updating an adapter.
 
 ## Configuration
 

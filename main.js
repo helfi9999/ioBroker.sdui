@@ -50,7 +50,7 @@ class Sdui extends utils.Adapter {
         const users = result.data
           .filter(user => Number.isSafeInteger(Number(user.id)) && Number(user.id) > 0)
           .map(user => ({
-            label: [user.firstname, user.lastname].filter(Boolean).join(' ') || 'Benutzer',
+            label: [user.firstname, user.lastname].filter(Boolean).join(' ') || 'User',
             value: String(user.id)
           }));
 
@@ -108,7 +108,7 @@ class Sdui extends utils.Adapter {
 
         if (obj.callback) this.sendTo(obj.from, obj.command, {success: true}, obj.callback);
       } catch (error) {
-        this.log.warn(`Sdui-Historien-Diagnose fehlgeschlagen: ${error.message}`);
+        this.log.warn(`Sdui history diagnostics failed: ${error.message}`);
         if (obj.callback) this.sendTo(obj.from, obj.command, {success: false, error: error.message}, obj.callback);
       }
       return;
@@ -173,7 +173,7 @@ class Sdui extends utils.Adapter {
         try {
           await this.setStateAsync("control.refresh", {val: false, ack: true});
         } catch (err) {
-          this.log.warn(`Sdui-Aktualisierungsbefehl konnte nicht zurückgesetzt werden: ${err.message}`);
+          this.log.warn(`Sdui refresh command could not be reset: ${err.message}`);
         }
       }
     }
@@ -257,16 +257,16 @@ class Sdui extends utils.Adapter {
       'holidays.daysUntilNext': ['Days until next holiday', 'number', 'value', -1],
       'holidays.lastUpdate': ['Last successful holiday synchronization', 'string', 'text', ''],
       'holidays.error': ['Last holiday query error', 'string', 'text', ''],
-      'timetable.weekGrid.json': ['Wochenraster als JSON (Montag bis Freitag)', 'string', 'json', '{}'],
-      'timetable.weekGrid.html': ['Wochenraster als HTML für VIS', 'string', 'html', ''],
-      'timetable.weekGrid.navigationHtml': ['Wochenraster mit Pfeilnavigation als HTML für VIS', 'string', 'html', ''],
-      'timetable.weekGrid.weeks.json': ['Wochenraster aller geladenen Wochen als JSON für VIS 2', 'string', 'json', '{}'],
-      'timetable.html.today': ['Stundenplan heute (HTML für VIS)', 'string', 'html', ''],
-      'timetable.html.tomorrow': ['Stundenplan morgen (HTML für VIS)', 'string', 'html', ''],
-      'timetable.html.week': ['Stundenplan nächste 7 Tage (HTML für VIS)', 'string', 'html', ''],
-      'substitutions.html.today': ['Vertretungen heute (HTML für VIS)', 'string', 'html', ''],
-      'substitutions.html.tomorrow': ['Vertretungen morgen (HTML für VIS)', 'string', 'html', ''],
-      'substitutions.html.week': ['Vertretungen nächste 7 Tage (HTML für VIS)', 'string', 'html', '']
+      'timetable.weekGrid.json': ['Weekly timetable grid as JSON (Monday to Friday)', 'string', 'json', '{}'],
+      'timetable.weekGrid.html': ['Weekly timetable grid as HTML for VIS', 'string', 'html', ''],
+      'timetable.weekGrid.navigationHtml': ['Weekly timetable grid with arrow navigation as HTML for VIS', 'string', 'html', ''],
+      'timetable.weekGrid.weeks.json': ['Weekly timetable grid for all loaded weeks as JSON for VIS 2', 'string', 'json', '{}'],
+      'timetable.html.today': ['Today timetable (HTML for VIS)', 'string', 'html', ''],
+      'timetable.html.tomorrow': ['Tomorrow timetable (HTML for VIS)', 'string', 'html', ''],
+      'timetable.html.week': ['Next 7 days timetable (HTML for VIS)', 'string', 'html', ''],
+      'substitutions.html.today': ['Today substitutions (HTML for VIS)', 'string', 'html', ''],
+      'substitutions.html.tomorrow': ['Tomorrow substitutions (HTML for VIS)', 'string', 'html', ''],
+      'substitutions.html.week': ['Next 7 days substitutions (HTML for VIS)', 'string', 'html', '']
     };
     await this.ensureParentChannels([
       ...Object.keys(states),
@@ -276,7 +276,7 @@ class Sdui extends utils.Adapter {
     ]);
     await this.extendObjectAsync("control.refresh", {
       type: "state",
-      common: {name: "Stundenplan jetzt aktualisieren", type: "boolean", role: "button", read: false, write: true, def: false},
+      common: {name: "Refresh timetable now", type: "boolean", role: "button", read: false, write: true, def: false},
       native: {}
     });
     await this.setObjectNotExistsAsync('news.markRead', {
@@ -325,16 +325,51 @@ class Sdui extends utils.Adapter {
       }
     }
     const objects = await this.getAdapterObjectsAsync();
+    let protectedStateCount = 0;
+
     for (const id of Object.keys(objects)) {
       const rel = id.startsWith(`${this.namespace}.`) ? id.slice(this.namespace.length + 1) : id;
-      if (rel.startsWith('timetable.lessons.') && !desired.has(rel) && objects[id].type === 'state') {
-        await this.delObjectAsync(rel);
+      const obj = objects[id];
+      const hasCustom = obj.common?.custom &&
+        Object.keys(obj.common.custom).length > 0;
+
+      if (rel.startsWith('timetable.lessons.') &&
+          !desired.has(rel) &&
+          obj.type === 'state') {
+        if (hasCustom) {
+          protectedStateCount++;
+          this.log.debug(`Keeping obsolete lesson state with custom settings: ${rel}`);
+        } else {
+          await this.delObjectAsync(rel);
+        }
       }
+    }
+
+    if (protectedStateCount > 0) {
+      this.log.warn(
+        `Kept ${protectedStateCount} obsolete lesson state(s) because custom settings are present (e.g. History or InfluxDB).`
+      );
     }
 
     // Remove obsolete lesson and day channels after their states are gone.
     const desiredChannels = new Set();
-    for (const id of desired) {
+    const retainedStates = new Set(desired);
+
+    // Keep the parent channels of states with custom settings.
+    for (const [id, obj] of Object.entries(objects)) {
+      const rel = id.startsWith(`${this.namespace}.`)
+        ? id.slice(this.namespace.length + 1)
+        : id;
+
+      if (rel.startsWith('timetable.lessons.') &&
+          obj.type === 'state' &&
+          obj.common?.custom &&
+          Object.keys(obj.common.custom).length > 0) {
+        retainedStates.add(rel);
+      }
+    }
+
+    for (const id of retainedStates) {
       const parts = id.split('.');
       for (let n = 3; n < parts.length; n++) {
         desiredChannels.add(parts.slice(0, n).join('.'));

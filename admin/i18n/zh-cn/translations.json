@@ -1,11 +1,11 @@
 {
   "Days future (1–210); beyond 35 days refreshed daily": "未来天数（1–210）；超过35天后每天更新",
-  "Days past (0–21); für vorige Wochen mindestens 14": "过去天数（0–21）；查看前几周至少需要14天",
-  "Schule auswählen": "选择学校",
-  "Schule suchen (Name oder Postleitzahl)": "搜索学校（名称或邮政编码）",
+  "Days past (0–21); at least 14 for previous weeks": "过去天数（0–21）；查看前几周至少需要14天",
+  "Select school": "选择学校",
+  "Search school (name or postal code)": "搜索学校（名称或邮政编码）",
   "Sdui password": "SDUI密码",
   "Sdui username or email (identifier)": "SDUI用户名或电子邮箱",
-  "Stundenplan-Benutzer auswählen": "选择课程表用户",
+  "Select timetable user": "选择课程表用户",
   "Unofficial SDUI integration for school timetables and news. Account credentials are stored in protected adapter settings.": "用于学校课程表和校园新闻的非官方SDUI集成。登录凭据保存在受保护的适配器设置中。",
   "Update interval in minutes (min. 15)": "更新间隔（分钟，最少15分钟）"
 }
